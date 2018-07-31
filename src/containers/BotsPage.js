@@ -20,6 +20,8 @@ class BotsPage extends React.Component {
   }
 
   handleClick = (event, bot) => {
+
+    //spread operator here for clone because of byref
     let clonedRoster = this.state.currentRoster
 
     if (clonedRoster.includes(bot)){
